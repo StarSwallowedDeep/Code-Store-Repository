@@ -1,0 +1,21 @@
+01. RUDY Attack
+  - RUDY: 웹 서버에 대한 공격 유형 중 하나로 서버의 리소스를 소진
+             시키고 대량의 POST 요청을 보내 자원을 고갈시킨다. 
+  - 특징: POST 요청으로 데이터를 지연시키고 오랫동안 유지하려고 
+           시도함으로써 DoS와 같이 서버에 지속적인 부하를 가합니다.
+
+02. RUDY 과정
+  - 원리: 연결을 유지하기 위해 지속적으로 POST 요청을 보냄
+           1) HTTP 데이터 전달
+           2) POST 요청
+           3) Content-Length를 이용해 글자 수에 맞는 요청을 기다림
+           4) keep-alive 옵션을 이용해 연결을 지속적으로 유지
+           5) 패킷을 하나씩 전송
+
+03. 실습
+  - python rudy.py <공격 대상 가상머신> 코드 실행
+  - Wireshark를 이용하여 패킷 유형과 경로 확인
+
+04. 출처
+  - https://www.youtube.com/watch?v=UNOuh8rJB_I&list=WL&index=136
+  - https://github.com/SergiDelta/rudy
