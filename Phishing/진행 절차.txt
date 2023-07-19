@@ -1,0 +1,10 @@
+01. Phishing
+  - 사람을 속여서 불법으로 개인 정보를 탈취하는 해킹 기법이다.
+
+02. 특징
+  - 피싱 공격자는 신뢰할 수 있는 공식 사이트로 위장해 개인 정보를
+    입력하게 만들어서 탈취를 시도한다.
+
+03. 출처
+  - https://www.youtube.com/watch?v=b935d3dBpo4&list=WL&index=135
+  - https://github.com/mrd0x/BITB
